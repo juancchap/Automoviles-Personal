@@ -5,6 +5,8 @@
 package com.mycompany.automovil.igu;
 
 import com.mycompany.automovil.logica.Contoladora;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -275,6 +277,17 @@ public class AltaAutomovil extends javax.swing.JFrame {
 
 
         control.agergarAtomovil(modelo,marca,motor,color,patente,cantPuertas);
+        
+        mostrarMensaje("Registro se realizo","Info","Registro realozada correctamente");
+    
+    Principal Princ = new Principal();
+    Princ.setVisible(true);
+    Princ.setLocationRelativeTo(null);
+    
+    
+    this.dispose();
+        
+        
     }//GEN-LAST:event_btnAgregarActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
@@ -294,7 +307,18 @@ public class AltaAutomovil extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-   
+    public void mostrarMensaje (String mensaje, String tipo, String titulo) {
+        JOptionPane optionPane = new JOptionPane(mensaje);
+            if (tipo.equals ("Info")) {
+            optionPane. setMessageType(JOptionPane.INFORMATION_MESSAGE);
+            }
+            else if (tipo.equals("Error")){
+                optionPane.setMessageType(JOptionPane.ERROR_MESSAGE);
+            }
+            JDialog dialog =optionPane.createDialog(titulo);
+            dialog.setAlwaysOnTop(true);
+            dialog.setVisible(true);
+        }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
