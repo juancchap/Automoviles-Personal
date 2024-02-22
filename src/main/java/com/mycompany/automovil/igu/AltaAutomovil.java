@@ -47,7 +47,7 @@ public class AltaAutomovil extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Juanc\\Pictures\\Saved Pictures\\pngegg (1).png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pngegg (1).png"))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
