@@ -56,7 +56,9 @@ public class ConsultaAtomovil extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaAutos);
 
+        btnEliminar.setBackground(new java.awt.Color(255, 204, 204));
         btnEliminar.setFont(new java.awt.Font("Dubai", 0, 24)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(0, 0, 0));
         btnEliminar.setText("ELIMINAR");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,7 +66,9 @@ public class ConsultaAtomovil extends javax.swing.JFrame {
             }
         });
 
+        btnModificar.setBackground(new java.awt.Color(255, 255, 204));
         btnModificar.setFont(new java.awt.Font("Dubai", 0, 24)); // NOI18N
+        btnModificar.setForeground(new java.awt.Color(0, 0, 0));
         btnModificar.setText("EDITAR");
         btnModificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,7 +76,9 @@ public class ConsultaAtomovil extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(51, 102, 255));
         jButton1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Atras");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

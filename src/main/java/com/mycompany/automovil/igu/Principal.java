@@ -43,7 +43,9 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Juanc\\Pictures\\Saved Pictures\\pngegg (1).png")); // NOI18N
 
+        btnSalir.setBackground(new java.awt.Color(255, 204, 204));
         btnSalir.setFont(new java.awt.Font("Dubai", 0, 36)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(0, 0, 0));
         btnSalir.setText("SALIR");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,7 +53,9 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        btnAltaAuto.setBackground(new java.awt.Color(204, 255, 204));
         btnAltaAuto.setFont(new java.awt.Font("Dubai", 0, 36)); // NOI18N
+        btnAltaAuto.setForeground(new java.awt.Color(0, 0, 0));
         btnAltaAuto.setText("ALTA");
         btnAltaAuto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,7 +63,9 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        btnConsulta.setBackground(new java.awt.Color(255, 255, 204));
         btnConsulta.setFont(new java.awt.Font("Dubai", 0, 36)); // NOI18N
+        btnConsulta.setForeground(new java.awt.Color(0, 0, 0));
         btnConsulta.setText("CONSULTA EDICION Y BAJA");
         btnConsulta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,12 +135,14 @@ public class Principal extends javax.swing.JFrame {
         AltaAutomovil alta = new AltaAutomovil();
         alta.setVisible(true);
         alta.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_btnAltaAutoActionPerformed
 
     private void btnConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaActionPerformed
            ConsultaAtomovil consu = new ConsultaAtomovil();
            consu.setVisible(true);
            consu.setLocationRelativeTo(null);
+           this.dispose();
     }//GEN-LAST:event_btnConsultaActionPerformed
 
 
